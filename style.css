@@ -1,0 +1,163 @@
+/* fonts ONLY */
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+h1 {
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 78px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+}
+h2  {
+    font-family: 'Sintony';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+}
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+}
+
+/* header */
+header {    
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.menu {
+    margin: 50px 10px 40px 10px;
+    display: none;
+}
+.logo {
+    margin: 48px 10px 38px 100px;
+}
+.search { 
+    margin: 52px 10px 34px 10px;
+}
+.about {
+    margin: 50px 10px 40px 10px;
+}
+.shop {
+    margin: 50px 10px 40px 10px;
+}
+.cart {
+    margin: 50px 10px 40px 10px;
+}
+.bag {
+    margin: 50px 104.35px 36px 3.35px;
+}
+
+/* first part */
+.first_part {
+    background-image: url(./images/Rectangle.jpg);
+    background-size: 100%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* second part */
+.second_part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fsnkrs_left {
+    margin: 158px 16px 164px 100px;
+    width: 288px;
+    height: 288px;
+}
+.fsnkrs_right {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+    margin: 158px 205px 164px 16px;
+    width: 815px;
+    height: 288px;
+}
+
+/* third part */
+.third_part {
+    background-image: url(./images/Rectangle2.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third_hone {
+    margin: 214px auto 197px;
+}
+
+/* fourth part */
+.fourth_part {
+    display: flex;
+    justify-content: center;    
+}
+.fourth_part_right {
+    margin: 122px 99px auto 68px;
+}
+.fourth_part_left {
+    margin: 122px 68px auto 99px;
+}
+
+/* media */
+@media screen and (max-width: 400px) {
+
+    /* header */
+    header {    
+    display: flex;
+    justify-content: space-around;
+    }
+    ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    }
+    .menu {
+        margin: 50px 10px 40px 10px;
+    }
+    .logo {
+        margin: 48px 10px 38px 100px;
+    }
+    .search { 
+        margin: 52px 10px 34px 10px;
+        display: none;
+    }
+    .about {
+        margin: 50px 10px 40px 10px;
+        display: none;
+    }
+    .shop {
+        margin: 50px 10px 40px 10px;
+        display: none;
+    }
+    .cart {
+        margin: 50px 10px 40px 10px;
+    }
+    .bag {
+        margin: 50px 104.35px 36px 3.35px;
+        display: none;
+    }
+}
