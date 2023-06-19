@@ -152,7 +152,7 @@ body {
         margin: 50px 10px 40px 10px;
     }
     .logo {
-        margin: 48px 10px 38px 100px;
+        margin: 48px 0px 38px 0px;
     }
     .search { 
         display: none;
@@ -171,7 +171,7 @@ body {
     }
 
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
 
     /* fonts ONLY */
     a {
