@@ -32,12 +32,33 @@ h3 {
     line-height: 160%;
     color: #000000;
 }
+#f1 {
+    font-family: 'Sintony';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    color: #000000;
+}
+#f2 {
+    font-family: 'Sintony';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: #000000;
+}
+
 
 /* header */
+.right_elements {
+    padding: 0px;
+}
 header {    
     display: flex;
     justify-content: space-between;
     background-color: aqua;
+    align-items: center;
 }
 ul {
     display: flex;
@@ -67,6 +88,12 @@ ul {
 .bag {
     margin: auto 104.35px auto 3.35px;
 }
+.center_text_up {
+    display: none;
+}
+.center_text_down {
+    display: none;
+}
 
 /* first part */
 .first_part {
@@ -81,7 +108,7 @@ ul {
 .center_text {
     display: flex;
     justify-content: center;
-    margin: 0% 5%;
+    margin: 38px 5%;
 }
 
 /* second part */
@@ -136,23 +163,86 @@ body {
 }
 
 /* media */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
 
+    /* fonts ONLY */
+    a {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        /* or 21px */
+
+        letter-spacing: 0.04em;
+
+        color: #000000;
+    }
+    h1 {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 140%;
+        /* or 36px */
+
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    h2  {
+        font-family: 'Sintony';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #000000;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        color: #000000;
+    }
+    #f1 {
+        font-family: 'Sintony';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        color: #000000;
+    }
+    #f2 {
+        font-family: 'Sintony';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #000000;
+
+    }
+    
     /* header */
     header {    
-    display: flex;
-    justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
     }
     ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+        display: flex;
+        list-style-type: none;
+        align-items: center;
     }
     .menu {
-        margin: 50px 10px 40px 10px;
+        margin: 20px 0px;
+        display: block;
     }
     .logo {
-        margin: 48px 0px 38px 0px;
+        margin: 23px 0px 23px 0px;
+        display: block;
+        height: 14px;
+        width: 140px;
     }
     .search { 
         display: none;
@@ -164,62 +254,86 @@ body {
         display: none;
     }
     .cart {
-        margin: 50px 10px 40px 10px;
+        margin: 20px 0px;
+        display: block;
     }
     .bag {
         display: none;
     }
 
-}
-@media screen and (max-width: 1024px) {
+    /* first part */
+    .first_part {
+        background-image: url(./images/Rectangle.jpg);
+        background-size: 100%;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    .daaa {
+        width: 280px;
+        height: 186px;
+    }
+    .center_text {
+        display: none;
+    }
+    .center_text_up {
+        display: block;
+        margin: 53px 20px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .center_text_down {
+        display: block;
+        margin: 10px 20px 53px;
+        display: flex;
+        justify-content: center;
+    }
 
-    /* fonts ONLY */
-    a {
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 130%;
-        letter-spacing: 0.04em;
-        color: #000000;
+    /* second part */
+    .second_part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: aqua;
     }
-    h1 {
-        font-family: 'Tomorrow';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 52px;
-        line-height: 140%;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #000000;
+    .fsnkrs_left {
+        width: 280px;
+        height: 280px;
+        margin: 50px 20px 20px ;
     }
-    h2  {
-        font-family: 'Sintony';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 140%;
-        color: #000000;
+    .fsnkrs_right {
+        margin: 20px 20px 50px;
     }
-    h3 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 160%;
-        color: #000000;
+
+    /* third part */
+    .third_part {
+        background-image: url(./images/Rectangle2.png);
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .third_hone {
+        margin: 30px 20px;
     }
 
     /* fourth part */
     .fourth_part {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         background-color: aqua;
     }
     .fourth_part_right {
-        margin: 122px 20px 0 28px;
+        margin: 10px 20px 50px;
+        width: 280px;
     }
     .fourth_part_left {
-        margin: 122px 28px 122px 20px;
-        width: 40%;
-        height: 40%;
+        margin: 50px 20px 10px;
+        width: 280px;
+        height: 281px;
     }
 }
