@@ -12,7 +12,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
-    line-height: 78px;
+    line-height: 140%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #000000;
@@ -22,14 +22,14 @@ h2  {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 56px;
+    line-height: 140%;
     color: #000000;
 }
 h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 160%;
     color: #000000;
 }
 
@@ -37,6 +37,7 @@ h3 {
 header {    
     display: flex;
     justify-content: space-between;
+    background-color: aqua;
 }
 ul {
     display: flex;
@@ -48,10 +49,11 @@ ul {
     display: none;
 }
 .logo {
+    width: 238px;
     margin: 48px 10px 38px 100px;
 }
 .search { 
-    margin: 52px 10px 34px 10px;
+    margin: auto 10px auto 10px;
 }
 .about {
     margin: 50px 10px 40px 10px;
@@ -63,17 +65,23 @@ ul {
     margin: 50px 10px 40px 10px;
 }
 .bag {
-    margin: 50px 104.35px 36px 3.35px;
+    margin: auto 104.35px auto 3.35px;
 }
 
 /* first part */
 .first_part {
     background-image: url(./images/Rectangle.jpg);
     background-size: 100%;
+    background-color: aqua;
 }
 .center {
     display: flex;
     justify-content: center;
+}
+.center_text {
+    display: flex;
+    justify-content: center;
+    margin: 0% 5%;
 }
 
 /* second part */
@@ -81,9 +89,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
 }
 .fsnkrs_left {
-    margin: 158px 16px 164px 100px;
+    margin: 158px 16px 164px 26px;
     width: 288px;
     height: 288px;
 }
@@ -93,9 +102,7 @@ ul {
     font-size: 40px;
     line-height: 56px;
     color: #000000;
-    margin: 158px 205px 164px 16px;
-    width: 815px;
-    height: 288px;
+    margin: 158px 26px 164px 16px;
 }
 
 /* third part */
@@ -107,23 +114,29 @@ ul {
     align-items: center;
 }
 .third_hone {
-    margin: 214px auto 197px;
+    margin: 214px 5% 197px;
 }
 
 /* fourth part */
 .fourth_part {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    background-color: aqua;
 }
 .fourth_part_right {
-    margin: 122px 99px auto 68px;
+    margin: 122px 20px 0 68px;
 }
 .fourth_part_left {
-    margin: 122px 68px auto 99px;
+    margin: 122px 68px 122px 20px;
+}
+
+/* body */
+body {
+    margin: 0 0 0 0;
 }
 
 /* media */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
 
     /* header */
     header {    
@@ -142,22 +155,71 @@ ul {
         margin: 48px 10px 38px 100px;
     }
     .search { 
-        margin: 52px 10px 34px 10px;
         display: none;
     }
     .about {
-        margin: 50px 10px 40px 10px;
         display: none;
     }
     .shop {
-        margin: 50px 10px 40px 10px;
         display: none;
     }
     .cart {
         margin: 50px 10px 40px 10px;
     }
     .bag {
-        margin: 50px 104.35px 36px 3.35px;
         display: none;
+    }
+
+}
+@media screen and (max-width: 1440px) {
+
+    /* fonts ONLY */
+    a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+    h1 {
+        font-family: 'Tomorrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    h2  {
+        font-family: 'Sintony';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 140%;
+        color: #000000;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #000000;
+    }
+
+    /* fourth part */
+    .fourth_part {
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+    }
+    .fourth_part_right {
+        margin: 122px 20px 0 28px;
+    }
+    .fourth_part_left {
+        margin: 122px 28px 122px 20px;
+        width: 40%;
+        height: 40%;
     }
 }
